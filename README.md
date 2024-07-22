@@ -2,7 +2,7 @@
 
 ⚠️ **NOTE!!!!!** This Goalng App Written for Me - So some Things Might not Work on Your PC or Laptop as this was Never Intended to be a Usable Full Fledged Application, in that Case, Please Try if You Can Fix that Up as Much as Possible, or you can Open an Issue for Help :) - You Need to Change Something Related to Database (in Makefile, docker-compose.yml and ...) - So Please Check Everything Before Running the Database and Server.
 
-<img src="diagram0.jpg" width="850px">
+<img src="diagram0.png" width="850px">
 
 ## Requirements
 
