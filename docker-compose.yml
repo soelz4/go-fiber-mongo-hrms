@@ -1,0 +1,26 @@
+services:
+  go-fiber-mongo-hrms:
+    container_name: gfmh
+    image: soelz/go-fiber-mongo-hrms:0.1
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    init: true
+    depends_on:
+      - mongodb
+    networks:
+      - backend
+    ports:
+      - 9010:9010
+    restart: unless-stopped
+  mongodb:
+    container_name: mongodb
+    image: mongodb/mongodb-community-server:latest
+    networks:
+      - backend
+    ports:
+      - 27017:27017
+networks:
+  backend:
+    name: backend
+    external: true
